@@ -33,12 +33,16 @@ int main() {
     ios_base::sync_with_stdio(0); cin.tie(0);
     cin >> n >> m >> p >> q;
     for (int i = 0; i < p; i++) {
-        int a, b, c; cin >> a >> b >> c;
-        en += c * n; edges.push_back({a, b, c, 0});
+        int a, b, c; 
+        cin >> a >> b >> c;
+        en += c * n; 
+        edges.push_back({a, b, c, 0});
     }
     for (int i = 0; i < q; i++) {
-        int x, y, z; cin >> x >> y >> z;
-        en += z * m; edges.push_back({x, y, z, 1});
+        int x, y, z; 
+        cin >> x >> y >> z;
+        en += z * m; 
+        edges.push_back({x, y, z, 1});
     }
     sort(edges.begin(), edges.end());
     planet.init(n); city.init(m);

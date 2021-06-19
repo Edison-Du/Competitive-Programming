@@ -18,7 +18,8 @@ int main() {
     cin >> n >> m;
     for (int i = 1; i <= n; i++) {
         for (int j = 1; j <= m; j++) {
-            int a; cin >> a;
+            int a; 
+            cin >> a;
             adj[a].push_back(i*j);
         }
     }
