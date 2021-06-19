@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
-typedef pair<int,int> pi;
 const int MAX = (int)1e5+5;
 
 struct ed {
