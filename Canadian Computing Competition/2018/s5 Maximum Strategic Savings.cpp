@@ -45,7 +45,8 @@ int main() {
         edges.push_back({x, y, z, 1});
     }
     sort(edges.begin(), edges.end());
-    planet.init(n); city.init(m);
+    planet.init(n); 
+    city.init(m);
     for (auto &i : edges) {
         if (i.t) { 
             if (planet.unite(i.u, i.v)) {
