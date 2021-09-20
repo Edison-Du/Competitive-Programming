@@ -15,7 +15,7 @@ set<int> allX, allY;
 map<int, int> idx, idy;
 
 int main() {
-    ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+    ios_base::sync_with_stdio(0); cin.tie(0);
     cin >> n >> k;
     for (int i = 0; i < n; i++) {
         ll x1, y1, x2, y2, t;

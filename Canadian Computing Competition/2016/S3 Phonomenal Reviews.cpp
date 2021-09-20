@@ -27,7 +27,7 @@ void dfs(int s, int p, int d) {
     }
 }
 int main() {
-    ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+    ios_base::sync_with_stdio(0); cin.tie(0);
     cin >> n >> m;
     edges = n-1;
     for (int i = 0; i < m; i++) {

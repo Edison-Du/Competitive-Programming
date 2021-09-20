@@ -62,7 +62,7 @@ void bfs() {
 }
 
 int main() {
-    ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+    ios_base::sync_with_stdio(0); cin.tie(0);
     memset(dist,-1,sizeof(dist));
     cin >> n >> m;
     for (int i = 0; i < n; i++) {

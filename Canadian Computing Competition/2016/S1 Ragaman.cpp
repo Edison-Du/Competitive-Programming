@@ -4,7 +4,7 @@ using namespace std;
 int frq1[26], frq2[26], wild;
 string a, b;
 int main() {
-    ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+    ios_base::sync_with_stdio(0); cin.tie(0);
     cin >> a >> b;
     for (char i : a) {
         frq1[(int)i-'a']++;
