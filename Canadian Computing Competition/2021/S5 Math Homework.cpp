@@ -19,15 +19,15 @@ struct segmentTreeGCD {
         sz = n;
         vals.assign(2*n, 0);
     }
-    void build(vector<int> &arr) {
+    void build (vector<int> &arr) {
         for (int i = 0; i < sz; i++) vals[i+sz] = arr[i];
         for (int i = sz-1; i > 0; i--) vals[i] = gcd(vals[2*i], vals[2*i+1]);
     }
-    void set(int p, int v) {
+    void set (int p, int v) {
         vals[p += sz] = v;
-        for (p /= 2; p > 0; p /= 2) vals[p] = gcd(vals[2*p], vals[2*p+1]);
+        while (p /= 2) vals[p] = gcd(vals[2*p], vals[2*p+1]);
     }
-    int get(int l, int r) {
+    int get (int l, int r) {
         int ret = 0;
         l += sz, r += sz;
         for (; l < r; l /= 2, r /= 2) {
